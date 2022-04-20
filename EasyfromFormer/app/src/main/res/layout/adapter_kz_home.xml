@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/_2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/learn_relative"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pro_farmers"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/margin_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/greencard_bgg"
+android:weightSum="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:textSize="@dimen/margin_20"
+                android:textAlignment="textStart"
+                android:layout_gravity="center"
+                android:id="@+id/text_title"
+                android:fontFamily="@font/rubik_regular"
+                android:layout_marginStart="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+
+
+                android:layout_weight="0.3"
+                android:background="@drawable/bg_circle">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    style="@style/Common_image"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_25dp"
+                    android:layout_marginBottom="@dimen/margin_10"
+                    android:src="@drawable/fertilizer"
+
+                    />
+
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

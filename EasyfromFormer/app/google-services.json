@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "812515300797",
+    "firebase_url": "https://ef-farmer.firebaseio.com",
+    "project_id": "ef-farmer",
+    "storage_bucket": "ef-farmer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812515300797:android:d153d07eb18a1cfd426ed4",
+        "android_client_info": {
+          "package_name": "in.calibrage.easyfarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812515300797-d3o8h8oe7qsmjff71tvnhq0139bs66h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuTZvHjVrcLelojunpePU2K2UG57fWxhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812515300797-d3o8h8oe7qsmjff71tvnhq0139bs66h2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

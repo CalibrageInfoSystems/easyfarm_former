@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.calibrage.easyfarm.Views.Exsting_Farmer_list">
+    <androidx.appcompat.widget.Toolbar
+        android:visibility="visible"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green" >
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity=""
+            >
+        <TextView
+            android:textColor="@color/white_new"
+
+            android:text="Vendor Services"
+            android:id="@+id/txt_name"
+            android:textAlignment="textStart"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/Common_textView_title"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="match_parent"/>
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            style="?attr/actionButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+
+            android:focusable="true">
+
+        <ImageView
+            android:id="@+id/cartButtonIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cart" />
+
+        <TextView
+            android:fontFamily="@font/hind_semibold"
+            android:id="@+id/txt_count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right|end|top"
+            android:layout_marginEnd="-5dp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/notification_white"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+        </FrameLayout>
+            <ImageView
+                android:id="@+id/optedservices"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/opt_services" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/no_data"
+            android:fontFamily="@font/hind_semibold"
+            android:gravity="center"
+
+            android:text="@string/no_vendor"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/margin_20" />
+    </LinearLayout>
+
+
+</LinearLayout>

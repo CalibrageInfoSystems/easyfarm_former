@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    tools:context="in.calibrage.easyfarm.Views.EncyclopediaActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/backlinear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+
+            app:titleTextColor="@color/white_new"
+            android:visibility="visible"
+            style="@style/ToolBarTheme.ToolBarStyle"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/transparent" />
+    </LinearLayout>
+    <!--
+            <include        android:layout_height="wrap_content"
+
+
+                android:layout_width="match_parent"
+
+
+                layout="@layout/toolbar_lay"        >
+
+            </include>-->
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:background="@color/transparent"
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backlinear"
+        android:layout_marginTop="-2dp"
+        android:elevation="6dp"
+        app:tabSelectedTextColor="@color/colorOrange"
+        app:tabTextAppearance="@style/TabLayoutStyle"
+        app:tabTextColor="@color/white"
+        app:tabGravity="fill"
+        app:tabBackground="@drawable/tab_color_selector"
+        app:tabIndicatorColor="@color/white_new"
+        app:tabMaxWidth="0dp"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="-1dp"
+        app:tabPaddingStart="-1dp"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/backlinear"
+
+
+        android:layout_marginTop="50dp">
+
+    </androidx.viewpager.widget.ViewPager>
+</RelativeLayout>

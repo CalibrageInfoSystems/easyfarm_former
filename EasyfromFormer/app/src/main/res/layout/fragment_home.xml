@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/googlemap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="Maps">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/whitee_bg"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:layout_margin="@dimen/margin_5"
+        android:gravity="top"
+
+        android:orientation="vertical">
+
+
+        <TextView
+            android:background="@color/whitepure"
+            style="@style/Common_textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_5"
+            android:textColor="@color/flot_clr"
+            android:paddingTop="5dp"
+
+            android:text="@string/learning" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/learning_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_gravity="bottom"
+            android:background="@color/whitepure"
+            android:numColumns="4" />
+
+
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/margin_10"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:visibility="visible"
+        style="@style/ToolBarTheme.ToolBarStyle"
+        android:id="@+id/toolbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green" >
+        <TextView
+            android:textColor="@color/white_new"
+            android:textAlignment="textStart"
+            android:text="Vendor Services"
+            android:id="@+id/txt_name"
+            style="@style/Common_textView_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative1"
+
+       >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_margin="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lay_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/margin_5"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@color/half_gray"
+                android:weightSum="1">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp" >
+
+                    <com.smarteist.autoimageslider.SliderView
+                        android:id="@+id/imageSliderr"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:sliderAnimationDuration="600"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderAutoCycleEnabled="true"
+                        app:sliderCircularHandlerEnabled="true"
+                        app:sliderIndicatorAnimationDuration="9000"
+                        app:sliderIndicatorGravity="center_horizontal|bottom"
+                        app:sliderIndicatorMargin="15dp"
+                        app:sliderIndicatorOrientation="horizontal"
+                        app:sliderIndicatorPadding="3dp"
+                        app:sliderIndicatorRadius="2dp"
+                        app:sliderIndicatorSelectedColor="#5A5A5A"
+                        app:sliderIndicatorUnselectedColor="#FFF"
+                        app:sliderScrollTimeInSec="1"
+                        app:sliderStartAutoCycle="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/discount"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="-50dp"
+                    android:background="@drawable/rounded_textview"
+                    android:gravity="center"
+                    android:text="30% off"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyt_Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+
+
+
+                <TextView
+                    android:id="@+id/Category"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:text="abc"
+                    android:textSize="@dimen/margin_12"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyt_discription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+
+
+                <TextView
+                    android:id="@+id/discription"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+
+                    android:text="@string/PolicyNumber"
+                    android:textSize="@dimen/_14dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/price"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+
+                    android:layout_weight="0.42"
+                    android:text="12"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_20" />
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+
+                    android:layout_weight="0.3"
+android:gravity="center"
+                    android:background="@drawable/edt_bg"
+                    android:text="11/09/2020"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <LinearLayout
+                    android:id="@+id/qty_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.28"
+                    android:layout_marginLeft="@dimen/margin_5"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:drawableRight="@drawable/star"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:paddingTop="5dp"
+                        android:text="@string/qunatity"
+                        android:textColor="@color/black2"
+                        android:textSize="@dimen/album_title" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:background="@drawable/spinner_bgg"
+                        android:layout_marginLeft="@dimen/_3dp"
+                        android:elevation="2dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:padding="10dp"
+                            android:layout_marginLeft="@dimen/margin_20"
+                            android:src="@drawable/drop_down" />
+
+                        <Spinner
+                            android:id="@+id/spinnerQuantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:background="@null"
+                            android:minHeight="0dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/deviderblack" />
+
+            <LinearLayout
+                android:id="@+id/lyt_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+
+
+                <TextView
+                    android:id="@+id/moredetail"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                android:textStyle="bold"
+                    android:text="@string/more"
+                    android:textSize="@dimen/_14dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+
+                android:layout_marginLeft="@dimen/margin_5"
+                android:background="@drawable/greendiveser" />
+            <LinearLayout
+                android:id="@+id/lyt_Sub_Category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/Sub_Category"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/Sub_Category"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_weight="0.6"
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_plot_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/service_name"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/ServiceName"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.6"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyt_BrandName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/Brand_Name"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/Brand_Name"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/size"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/size"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lyt_uom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/uom"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/uom"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:textStyle="bold"
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/deviderblack" />
+            <LinearLayout
+                android:id="@+id/lyt_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+
+
+                <TextView
+                    android:id="@+id/contactdetails"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:text="@string/contact"
+                    android:textSize="@dimen/_14dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+
+                android:layout_marginLeft="@dimen/margin_5"
+                android:background="@drawable/greendiveser" />
+
+            <LinearLayout
+                android:id="@+id/lyt_contactname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/Contact_person"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/Contact_person"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_contactnum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/Contact_num"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/Contact_num"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_open_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="@string/timings"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    android:id="@+id/open_time"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/deviderblack" />
+
+            <LinearLayout
+                android:id="@+id/lytaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/addressdetails"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/address_details"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+
+                android:layout_marginLeft="@dimen/margin_5"
+                android:background="@drawable/greendiveser" />
+            <LinearLayout
+                android:id="@+id/lyt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+
+
+                <TextView
+                    android:id="@+id/address"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text=" "
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/deviderblack" />
+
+            <LinearLayout
+                android:id="@+id/lyt_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+
+                <TextView
+                    android:id="@+id/commentts"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_5"
+                    android:textStyle="bold"
+                    android:text="@string/comments"
+                    android:textSize="@dimen/_14dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="3dp"
+
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/greendiveser" />
+            <LinearLayout
+                android:id="@+id/lytcomments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+
+
+
+                <TextView
+                    android:id="@+id/comments"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/margin_5"
+                android:layout_below="@+id/activity_main">
+                <Button
+                    android:id="@+id/add_cart"
+                    style="@style/Common_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_15"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/Addcart">
+
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+android:layout_margin="@dimen/margin_5"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/white_new"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        app:cardCornerRadius="3dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:scaleType="centerInside"
+                    android:src="@drawable/easyfarmlogo"
+                    android:layout_weight="0.2"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/image_view"
+                    android:layout_height="match_parent"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_category"
+                        style="@style/Common_textView_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:text="Hindi"
+                        android:textAlignment="textStart"
+                        android:layout_marginLeft="15dp"
+
+                        android:textColor="@color/green"
+
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:id="@+id/txt_discription"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Hindi"
+                            android:textSize="@dimen/_14dp"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/text_dark_gray" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_5"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/text_dark_gray"
+                        android:weightSum="1">
+
+
+                        <TextView
+                            android:id="@+id/txt_price"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"
+                            android:text="10"
+                            android:textSize="@dimen/margin_20"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black2" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal"
+                        android:layout_marginRight="5dp"
+                        android:textColor="@color/text_dark_gray"
+                        android:weightSum="1">
+
+                        <TextView
+                            android:id="@+id/txt_"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:visibility="invisible"
+                            android:layout_marginLeft="15dp"
+                            android:text="10"
+                            android:textSize="@dimen/text_size_16"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/txt_imag"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+
+                            android:layout_weight="0.08"
+
+                            android:background="@drawable/icons_error"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_16" />
+
+                        <TextView
+                            android:id="@+id/txt_status"
+                            style="@style/Common_textView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+android:singleLine="true"
+                            android:maxLines="1"
+                            android:paddingRight="@dimen/_2dp"
+                            android:text="Pending for Approval"
+                            android:textAlignment="textEnd"
+                            android:textColor="@color/flot_clr"
+                            android:textSize="@dimen/_14dp" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+
+                android:background="@drawable/deviderblack" />
+            <LinearLayout
+                android:id="@+id/lyt_discount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_5"
+                android:weightSum="1">
+
+
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+
+                    android:text="11/09/2020"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+                <LinearLayout
+                    android:id="@+id/qty_lyt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="0.3"
+                    android:layout_margin="@dimen/margin_5"
+                    android:weightSum="1">
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+
+                        android:drawablePadding="3dp"
+                        android:paddingTop="5dp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="@string/qunatityy"
+                        android:textColor="@color/black2"
+                        android:textSize="@dimen/album_title" />
+
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+
+                        android:drawablePadding="3dp"
+                        android:paddingTop="5dp"
+                        android:fontFamily="@font/rubik_regular"
+                        android:text="1"
+                        android:textColor="@color/black2"
+                        android:textSize="@dimen/album_title" />
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/serviced"
+                    style="@style/Common_textView"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:background="@drawable/spinner_greenbgg"
+                    android:text="Serviced"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/text_size_16" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

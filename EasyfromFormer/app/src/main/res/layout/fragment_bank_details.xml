@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginBottom="50dp">
+
+
+
+
+
+
+        <TextView
+            style="@style/Common_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/Bank_Details"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14dp"
+            android:textColor="@color/colorPrimaryDarkSplash" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:id="@+id/linear_bankdetails"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ed_bg" >
+
+        <LinearLayout
+            android:id="@+id/lyt_account_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text="@string/Account_Name"
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/account_name"
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/devider_black" />
+        <LinearLayout
+            android:id="@+id/lyt_accountnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text="@string/Account_Number"
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/account_number"
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/devider_black" />
+        <LinearLayout
+            android:id="@+id/lyt_bankname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text="@string/bank_name"
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+        >
+
+            <TextView
+                android:id="@+id/bankname"
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/devider_black" />
+        <LinearLayout
+            android:id="@+id/lyt_branch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text="@string/Branch"
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/branch"
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/devider_black" />
+        <LinearLayout
+            android:id="@+id/lyt_ifsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text="@string/IFSC_Code"
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/ifsc_Code"
+                style="@style/Common_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/devider_black" />
+            <LinearLayout
+                android:id="@+id/lyt_passbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    style="@style/Common_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:text="@string/pass_book"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+
+
+                <ImageView
+                    android:id="@+id/passbook_image"
+                    style="@style/Common_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/no_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:orientation="vertical"
+
+            android:weightSum="1">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center"
+                android:text="@string/no_bankdetails"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/margin_20" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Common_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/Identity_Proofs"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14dp"
+            android:textColor="@color/colorPrimaryDarkSplash" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+android:layout_marginBottom="@dimen/margin_50"
+        android:background="@drawable/ed_bg" >
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recycler_view"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:scrollbars="vertical"
+            android:scrollbarThumbVertical="@color/colorPrimary"
+            android:scrollbarSize="3dp"
+            android:scrollbarStyle="outsideInset"
+            android:layout_marginBottom="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+android:visibility="gone"
+            android:orientation="vertical"
+
+            android:weightSum="1">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center"
+                android:text="@string/no_IDS"
+                android:textColor="@color/colorOrange"
+                android:textSize="@dimen/margin_20" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
